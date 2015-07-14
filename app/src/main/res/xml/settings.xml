@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="User Profile" >
+        <EditTextPreference
+            android:key="username"
+            android:summary="Set username"
+            android:title="Username" />
+        <EditTextPreference
+            android:inputType="textPassword"
+            android:key="password"
+            android:summary="Set password"
+            android:title="Password" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Auto Refresh" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="refresh"
+            android:summary="Enable or disable auto refresh"
+            android:title="Auto Refresh" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Update Settings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefnotify"
+            android:summary="Notify on build status change"
+            android:title="Notify" >
+        </CheckBoxPreference>
+
+        <ListPreference
+            android:entries="@array/syncFrequency"
+            android:entryValues="@array/syncFrequencyValues"
+            android:key="prefSyncFrequency"
+            android:summary="Set the sync frequency"
+            android:title="Sync frequency" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

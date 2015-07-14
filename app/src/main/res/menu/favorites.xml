@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.naveen.teamcity.FavoritesActivity" >
+
+    <item
+        android:id="@+id/setttings"
+        android:icon="@drawable/gear"
+        android:orderInCategory="100"
+        android:title="@string/settings"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/serverconfSettings"
+        android:icon="@drawable/gear"
+        android:orderInCategory="100"
+        android:title="@string/configure_servers"
+        app:showAsAction="always"/>
+
+</menu>

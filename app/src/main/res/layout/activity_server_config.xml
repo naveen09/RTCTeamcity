@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    tools:context=".ServerConfigActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/addServerBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:onClick="openServerConfigDialog"
+                android:scaleType="fitXY"
+                android:src="@drawable/addimage" />
+        </LinearLayout>
+
+        <com.twotoasters.jazzylistview.JazzyListView
+            android:id="@+id/serversList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill"
+            android:dividerHeight="1dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone"
+            app:effect="cards"
+            app:max_velocity="0"
+            app:only_animate_fling="false"
+            app:only_animate_new_items="false" />
+
+        <LinearLayout
+            android:id="@+id/nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/infoicon" />
+
+            <TextView
+                android:id="@+id/no_data_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Please configure atleast one Teamcity server"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

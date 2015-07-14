@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Team City</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="title_activity_project">ProjectActivity</string>
+    <string name="login_to_teamcity">Login to TeamCity</string>
+    <string name="build_name">Build name</string>
+    <string name="build_types">Build Types</string>
+    <string name="available_projects">Available Projects</string>
+    <string name="buildstatus">Build Status</string>
+    <string name="id">id</string>
+    <string name="run_build">Run Build</string>
+    <string name="status">"Status : "</string>
+    <string name="title_activity_server_config">Configure server</string>
+    <string name="add_server">Add Server</string>
+    <string name="server_configuration">Server Configuration</string>
+    <string name="welcome">Welcome to</string>
+    <string name="teamcity">TeamCity</string>
+    <string name="teamcity_port">http://&lt;teamcity:port&gt;.com</string>
+    <string name="ok">%1$s Ok</string>
+    <string name="remove">%1$s Remove</string>
+    <string name="cancel">%1$s Cancel</string>
+    <string name="title_activity_favorites">Watch List</string>
+    <string name="keep_watch_on_this_build">Select "Ok" to keep watch on this build.</string>
+    <string name="acess_favorites_section">*you can access this build from favorites section.</string>
+    <string name="watch_list">Watch List</string>
+    <string name="configure_servers">Configure Servers</string>
+    <string name="addBuild">Add Builds</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="syncFrequency">
+        <item name="1">Once a day</item>
+        <item name="7">Once a week</item>
+        <item name="3">Once a year</item>
+        <item name="0">Never (Update maually)</item>
+    </string-array>
+    <string-array name="syncFrequencyValues">
+        <item name="1">1</item>
+        <item name="7">7</item>
+        <item name="30">30</item>
+        <item name="0">0</item>
+    </string-array>
+
+    <string name="title_activity_activity_holder">ActivityHolder</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="unofficial_app_for_teamcity">Unofficial App for TeamCity</string>
+    <string name="loading_build_types_">Loading Build Types&#8230;</string>
+    <string name="loading_build_status_">Loading build status&#8230;</string>
+    <string name="no_builds_found_please_add_builds_or_configure_teamcity_server">No Builds found, Please add builds or configure Teamcity server</string>
+    <string name="autorefresh">AutoRefresh:</string>
+    <string name="last_updated">"Last Updated:  "</string>
+
+
+
+    <!-- Strings related to Settings -->
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact based on your message history</string>
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+</resources>

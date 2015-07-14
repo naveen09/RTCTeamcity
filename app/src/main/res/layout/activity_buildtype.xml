@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#34495E"
+    tools:context=".BuildTypeActivity" >
+
+    <!--
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buildTypeHeader"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="#34495E"
+        android:dividerHeight="2dp" >
+    </ListView>
+    -->
+
+
+    <com.twotoasters.jazzylistview.JazzyListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buildTypeHeader"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="#34495E"
+        android:dividerHeight="2dp"
+        app:effect="cards"
+        app:max_velocity="0"
+        app:only_animate_fling="false"
+        app:only_animate_new_items="false" />
+
+    <TextView
+        android:id="@+id/buildTypeHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/build_types"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+</RelativeLayout>
